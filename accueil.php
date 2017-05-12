@@ -8,12 +8,13 @@
   </head>
   <body>
     <header>
-      <div class="connexion">
+      <div class="col-lg-12">
         <ul>
           <li><a href="#">se connecter</a></li>
           <li><a href="#">s'inscrire</a></li>
         </ul>
       </div>
+        <img src="image/header.jpg" alt="">
     </header>
   </body>
 </html>
