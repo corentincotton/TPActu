@@ -20,10 +20,10 @@ if(isset($_POST["submit2"])){
     $req->bindValue(':pseudo', $_POST["pseudo"]);
     $req->bindValue(':password', $_POST["password"]);
       if ($req->execute()){
-        echo "votre formulaire a été rempli, tu peux entrer avec le pseudo";
       }
     }
   }
+
 
 ?>
 
