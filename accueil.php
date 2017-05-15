@@ -27,6 +27,7 @@
             <input type="text" name="pseudoIn" placeholder="Pseudo">
             <input type="password" name="passwordIn" placeholder="Mot de passe">
             <input type="submit" name="signInForm" value="se connecter">
+            <div class="signInMsg"></div>
           </form>
         </div>
         </div>
