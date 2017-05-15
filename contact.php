@@ -9,11 +9,11 @@ if ($action==""){
     $message=$_REQUEST['message'];
     if (($name=="")||($email=="")||($message==""))
         {
-		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+		echo "rempli tout les champs <a href=\"\"> du formulaire</a>.";
 	    }
     else{
 	    $from="From: $name<$email>\r\nReturn-path: $email";
-        $subject="Message sent using your contact for";
+        $subject="message envoyer";
 		 mail("corentin.cotton@free.fr", $subject, $message, $from);
 		echo "Email sent!";
 	    }
@@ -28,9 +28,10 @@ if ($action==""){
   <head>
     <meta charset="utf-8">
     <title>page de contact</title>
+    <link rel="stylesheet" href="accueil.css">
   </head>
   <body>
-    <form  action="" method="POST" enctype="multipart/form-data">
+    <form action="" method="POST" enctype="multipart/form-data">
   <input type="hidden" name="action" value="submit">
   Your name:<br>
   <input name="name" type="text" value="" size="30"/><br>
