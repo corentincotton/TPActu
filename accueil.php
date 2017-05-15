@@ -1,24 +1,14 @@
 <?php
-define('MYSQL_HOST', 'localhost');
-define('MYSQL_USER', 'root');
-define('MYSQL_PASSWD', 'adepal59');
-define('MYSQL_DB', 'php');
 
-try {
-  $PDO = new PDO('mysql:host=' . MYSQL_HOST . ';dbname=' . MYSQL_DB, MYSQL_USER, MYSQL_PASSWD);
-  $PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
-  $PDO->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-} catch (PDOException $e) {
-  $e->getMessage();
-}
+  require_once 'php/config.php';
 
-if(isset($_POST["submit2"])){
-  if($_POST["lastname"] != "" && $_POST["firstname"] != "" && $_POST["pseudo"] != ""  && $_POST["password"] != ""){
-    $req = $PDO->prepare("INSERT INTO users (lastname, firstname, pseudo, password) VALUES(:lastname, :firstname, :pseudo, :password)");
-    $req->bindValue(':lastname', $_POST["lastname"]);
-    $req->bindValue(':firstname', $_POST["firstname"]);
-    $req->bindValue(':pseudo', $_POST["pseudo"]);
-    $req->bindValue(':password', $_POST["password"]);
+  if(isset($_POST["submit2"])){
+    if($_POST["lastname"] != "" && $_POST["firstname"] != "" && $_POST["pseudo"] != ""  && $_POST["password"] != ""){
+      $req = $PDO->prepare("INSERT INTO users (lastname, firstname, pseudo, password) VALUES(:lastname, :firstname, :pseudo, :password)");
+      $req->bindValue(':lastname', $_POST["lastname"]);
+      $req->bindValue(':firstname', $_POST["firstname"]);
+      $req->bindValue(':pseudo', $_POST["pseudo"]);
+      $req->bindValue(':password', $_POST["password"]);
       if ($req->execute()){
         echo "votre formulaire a été rempli, tu peux entrer avec le pseudo";
       }
@@ -33,10 +23,10 @@ if(isset($_POST["submit2"])){
   <head>
     <meta charset="utf-8">
     <title>document</title>
-    <link rel="stylesheet" href="accueil.css">
-    <link rel="stylesheet" href="bootstrap.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="index.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/accueil.css">
+    <script src="js/index.js"></script>
   </head>
   <body>
     <header>
