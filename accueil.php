@@ -24,6 +24,25 @@ if(isset($_POST["submit2"])){
     }
   }
 
+  if(isset($_POST["submit2"])){
+    if($_POST["pseudo"] != "" && $_POST["password"] !=""){
+
+      $pseudo = $_POST['pseudo'];
+      $password = $_POST['password'];
+      $req = $PDO->prepare("SELECT * FROM users WHERE pseudo, password = :pseudo, :password");
+      $req->bindValue(":pseudo", $_POST["pseudo"]);
+      $req->bindValue(":password", $_POST["password"]);
+      $req->execute();
+      $rows = $req->rowCount();
+        if ($rows == 1){
+          $_SESSION['pseudo'] = $pseudo;
+          $_SESSION['password'] = $password;
+          header('location: actu.php');
+        }else {
+          echo "tu n'es pas inscrit";
+        }
+      }
+    }
 
 ?>
 
