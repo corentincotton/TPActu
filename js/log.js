@@ -9,8 +9,6 @@ $(function(){
       password : $("input[name='passwordUp']").val(),
     }
 
-    console.log(data);
-
     $.ajax({
       method : "POST",
       url : "php/signUp.php",
@@ -21,6 +19,26 @@ $(function(){
         }else{
           $('.signUpMsg').html('Inscription ratée');
         }
+      }
+    })
+  })
+
+  $('#signInForm').on('submit', function(e){
+    e.preventDefault();
+
+    data = {
+      pseudo : $("input[name='pseudoIn']").val(),
+      password : $("input[name='passwordIn']").val(),
+    }
+
+    console.log(data);
+
+    $.ajax({
+      method : "POST",
+      url : "php/signIn.php",
+      data : data,
+      success : function(res){
+        $('.signInMsg').html(res);
       }
     })
   })
