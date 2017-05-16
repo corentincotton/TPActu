@@ -1,5 +1,6 @@
 <?php
 $action=$_REQUEST['action'];
+
 if ($action==""){
 
 }else
@@ -19,7 +20,6 @@ if ($action==""){
 	    }
     }
 
-
 ?>
 
 
@@ -28,10 +28,10 @@ if ($action==""){
   <head>
     <meta charset="utf-8">
     <title>page de contact</title>
-    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="css/accueil.css">
   </head>
   <body>
-    <form action="" method="POST" enctype="multipart/form-data">
+    <form action="contact.php" method="POST" enctype="multipart/form-data">
   <input type="hidden" name="action" value="submit">
   Your name:<br>
   <input name="name" type="text" value="" size="30"/><br>
