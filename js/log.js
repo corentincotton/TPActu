@@ -19,10 +19,13 @@ $(function(){
       data    : data,
       success : function(res){
         if(res == 1){
+          $('.signUpMsg').html('');
           $('.signUpMsg').html('Inscription réussie !');
         }else if(res == 2){
+          $('.signUpMsg').html('');
           $('.signUpMsg').html('Inscription ratée, réessayez');
         }else{
+          $('.signUpMsg').html('');
           $('.signUpMsg').html('Tout les champs doivent être rempli');
         }
       }
@@ -49,10 +52,13 @@ $(function(){
           $('.signInMsg').html('Connexion réussie');
           window.location.href = "actu.php";
         }else if(res == 2){
+          $('.signInMsg').html('');
           $('.signInMsg').html('Connexion échouée, réessayez');
         }else if(res == 3){
+          $('.signInMsg').html('');
           $('.signInMsg').html('Mauvaise informations');
         }else{
+          $('.signInMsg').html('');
           $('.signInMsg').html('Tout les champs doivent être rempli');
         }
       }

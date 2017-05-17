@@ -13,10 +13,15 @@ $(function(){
       url    : "php/news.php",
       data   : data,
       success : function(res){
-        if(res == true){
+        if(res == 1){
+          $('.newsMsg').html('');
           $('.newsMsg').html('Inscription réussie !');
+        }else if(res == 2){
+          $('.newsMsg').html('');
+          $('.newsMsg').html('Inscription ratée, réessayez');
         }else{
-          $('.newsMsg').html('Inscription ratée');
+          $('.newsMsg').html('');
+          $('.newsMsg').html('Veuillez renseigner votre adresse email');
         }
       }
     })

@@ -28,7 +28,6 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `newsletter` (
 `id` int(11) NOT NULL,
-  `pseudo` varchar(50) NOT NULL,
   `mail` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
