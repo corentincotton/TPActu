@@ -9,10 +9,12 @@
     $req->bindValue(':pseudo', $_POST["pseudo"]);
     $req->bindValue(':password', sha1($_POST["password"]));
     if ($req->execute()){
-      echo true;
+      echo 1;
     }else{
-      echo false;
+      echo 2;
     }
+  }else{
+    echo 3;
   }
 
 ?>

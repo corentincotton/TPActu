@@ -15,16 +15,18 @@
         $req->bindValue(":session", $session);
         if($req->execute()){
           $_SESSION["session"] = $session;
-          // Redirection
+          echo 1;
         }else{
-          echo "Erreur de l'update";
+          echo 2;
         }
       }else{
-        echo "Mauvaises infos !";
+        echo 3;
       }
     }else{
-      echo "Erreur du select user";
+      echo 2;
     }
+  }else{
+    echo 4;
   }
 
 ?>

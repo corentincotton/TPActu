@@ -23,13 +23,13 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Newsletter`
+-- Structure de la table `newsletter`
 --
 
-CREATE TABLE IF NOT EXISTS `Newsletter` (
+CREATE TABLE IF NOT EXISTS `newsletter` (
 `id` int(11) NOT NULL,
-  `user_id` varchar(50) NOT NULL,
-  `mail` varchar(50) NOT NULL
+  `pseudo` varchar(50) NOT NULL,
+  `mail` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

@@ -2,26 +2,6 @@
 
   require_once 'php/config.php';
 
-  if(isset($_POST["signInForm"])){
-    if($_POST["pseudoIn"] != "" && $_POST["passwordIn"] !=""){
-
-      $pseudo = $_POST['pseudo'];
-      $password = $_POST['password'];
-      $req = $PDO->prepare("SELECT * FROM users WHERE pseudo, password = :pseudo, :password");
-      $req->bindValue(":pseudo", $_POST["pseudo"]);
-      $req->bindValue(":password", $_POST["password"]);
-      $req->execute();
-      $rows = $req->rowCount();
-        if ($rows == 1){
-          $_SESSION['pseudo'] = $pseudo;
-          $_SESSION['password'] = $password;
-          header('location: actu.php');
-        }else {
-          echo "tu n'es pas inscrit";
-        }
-      }
-    }
-
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +20,7 @@
       <div class="row">
         <div class="col-lg-12">
           <h1>Newsletter</h1>
-          <form id="signInForm" class="form" action="accueil.php" method="POST">
+          <form id="signInForm" class="form" action="" method="POST">
             <input type="text" name="pseudoIn" placeholder="Pseudo">
             <input type="password" name="passwordIn" placeholder="Mot de passe">
             <input type="submit" name="signInForm" value="se connecter">
