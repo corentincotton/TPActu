@@ -24,6 +24,9 @@ $(function(){
         }else if(res == 2){
           $('.signUpMsg').html('');
           $('.signUpMsg').html('Inscription ratée, réessayez');
+        }else if(res == 3){
+          $('.signUpMsg').html('');
+          $('.signUpMsg').html('Pseudo déjà utilisé');
         }else{
           $('.signUpMsg').html('');
           $('.signUpMsg').html('Tout les champs doivent être rempli');
