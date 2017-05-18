@@ -1,12 +1,26 @@
-.col-lg-12{
+.title{
   background-color: black;
 }
-.form{
+#signInForm{
   position: absolute;
-  right: 10px;
-  top: 20px;
+  right: 110px;
+  top: 12px;
 }
 .inscri{
-  text-align: right;
+  text-align: ;
   margin: 15px;
+}
+.navbar-brand{
+  text-align: center;
+}
+input{
+  text-align: center;
+}
+#contactform, #news{
+  text-align: center;
+
+}
+h2{
+  text-align: center;
+  margin: 50px;
 }
