@@ -6,6 +6,11 @@ $(function(){
       mail : $("input[name='mail']").val(),
     }
 
+<<<<<<< HEAD
+=======
+    console.log(data);
+
+>>>>>>> 85a353b0a683b4d8f90ae5fa2c6ba818a9e67046
     $.ajax({
       method : "POST",
       url    : "php/news.php",

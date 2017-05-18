@@ -10,6 +10,7 @@
   text-align: ;
   margin: 15px;
 }
+<<<<<<< HEAD
 .navbar-brand{
   text-align: center;
 }
@@ -23,4 +24,11 @@ input{
 h2{
   text-align: center;
   margin: 50px;
+=======
+
+
+/* css newsletter*/
+.new{
+  text-align: center;
+>>>>>>> 85a353b0a683b4d8f90ae5fa2c6ba818a9e67046
 }

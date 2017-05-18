@@ -35,13 +35,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `users`
---
-
-INSERT INTO `users` (`id`, `lastname`, `firstname`, `pseudo`, `password`) VALUES
-(4, 'cotton', 'corentin', 'coco', 'coco59');
-
---
 -- Index pour les tables exportées
 --
 
