@@ -6,8 +6,6 @@ $(function(){
       mail : $("input[name='mail']").val(),
     }
 
-    console.log(data);
-
     $.ajax({
       method : "POST",
       url    : "php/news.php",
