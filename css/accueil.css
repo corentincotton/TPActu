@@ -1,29 +1,39 @@
 .title{
   background-color: black;
 }
+
 #signInForm{
   position: absolute;
   right: 110px;
   top: 12px;
 }
+
 .inscri{
   margin: 15px;
+}
+
+.signUpMsg, .signInMsg {
+  color: red;
 }
 
 /* css newsletter*/
 .new{
   text-align: center;
 }
+
 .navbar-brand{
   text-align: center;
 }
+
 input{
   text-align: center;
 }
+
 #contactform, #news{
   text-align: center;
 
 }
+
 h2{
   text-align: center;
   margin: 50px;

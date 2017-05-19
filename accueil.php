@@ -3,12 +3,12 @@
   require_once 'php/config.php';
 
   //envoie du mail
-  $message = "Line 1\r\nLine 2\r\nLine 3";
-  $message = wordwrap($message, 70, "\r\n");
-  mail('corentin.cotton@free.fr', 'Mon Sujet', $message);
 
   if(isset($_POST["contactform"])){
     if($_POST["email"] != "" && $_POST["message"] !=""){
+      $message = "Line 1\r\nLine 2\r\nLine 3";
+      $message = wordwrap($message, 70, "\r\n");
+      mail('corentin.cotton@free.fr', 'Mon Sujet', $message);
     }
   }
 
@@ -39,14 +39,14 @@
           <div class="signInMsg"></div>
         </form>
       </div>
-      <!--<form id="signUpForm" action="" method="POST"></div>
+      <!-- <form id="signUpForm" action="" method="POST"></div>
         <div class="inscri"><input type="text" name="lastname" placeholder="nom"></div>
         <div class="inscri"><input type="text" name="firstname" placeholder="prenom"></div>
         <div class="inscri"><input type="text" name="pseudoUp" placeholder="pseudo"></div>
         <div class="inscri"><input type="password" name="passwordUp" placeholder="password"></div>
         <div class="inscri"><input type="submit" name="signUpForm" value="s'inscrire"></div>
         <div class="signUpMsg"></div>
-      </form>-->
+      </form> -->
   </header>
   <section>
     <h2>Contact</h2>
