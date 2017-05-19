@@ -30,7 +30,7 @@
       <div class="title">
         <nav class="navbar navbar-light bg-faded">
           <a class="navbar-brand" >NAVBAR</a>
-          <a class="navbar-brand" href="http://localhost/TP/newsletter.php">inscription</a>
+          <a class="navbar-brand" href="http://localhost/TP/inscription.php">inscription</a>
         </nav>
         <form id="signInForm" action="accueil.php" method="POST">
           <input type="text" name="pseudoIn" placeholder="Pseudo">
@@ -39,14 +39,6 @@
           <div class="signInMsg"></div>
         </form>
       </div>
-      <form id="signUpForm" action="" method="POST"></div>
-      <div class="inscri"><input type="text" name="lastname" placeholder="nom"></div>
-      <div class="inscri"><input type="text" name="firstname" placeholder="prenom"></div>
-      <div class="inscri"><input type="text" name="pseudoUp" placeholder="pseudo"></div>
-      <div class="inscri"><input type="password" name="passwordUp" placeholder="password"></div>
-      <div class="inscri"><input type="submit" name="signUpForm" value="s'inscrire"></div>
-      <div class="signUpMsg"></div>
-    </form>
     </header>
 
     <section>

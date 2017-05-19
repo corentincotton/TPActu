@@ -7,10 +7,9 @@
   top: 12px;
 }
 .inscri{
-  text-align: ;
+  text-align: center;
   margin: 15px;
 }
-<<<<<<< HEAD
 .navbar-brand{
   text-align: center;
 }
@@ -19,16 +18,18 @@ input{
 }
 #contactform, #news{
   text-align: center;
-
 }
-h2{
-  text-align: center;
-  margin: 50px;
-=======
-
-
-/* css newsletter*/
-.new{
-  text-align: center;
->>>>>>> 85a353b0a683b4d8f90ae5fa2c6ba818a9e67046
+img{
+  width: 100%;
+}
+.box {
+  padding: 0;
+  width: auto;
+}
+.box:hover{
+  transform: perspective(3px) translateZ(0);
+  transition-duration: 0.5s;
+}
+img{
+  width: auto;
 }
